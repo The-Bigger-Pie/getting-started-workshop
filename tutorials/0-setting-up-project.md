@@ -32,6 +32,20 @@ First you would open your Terminal. You should now be located in your `NAME_OF_Y
 
 From here you will install the software you will need, if I don't tell you that you need to navigate to a specific folder to do that.
 
+In the beginnning you will get a lot of error messages. Read them carefully.
+
+Sometimes they will even explain you what you did wrong and what command you actually have to enter. 
+You can trust these advices.
+
+When the Command Line tells you to run a command, it means, that you have to put it in the command line and then press enter.
+
+Another thing that will most likely happen to you a lot, is that you habe a spelling mistake in you command. But thankfully ou will not have to enter the complete command again. you can just press `arrow up` on your keyboard and you will be able to go through your last commands. 
+
+Also you cannot just click on a position you want to get to. You will have to navigate with the arrow keys on your keyboard. But if its a long command you can also press `Ctr + A`.
+
+At one point when you are installing programms like your package manager, you will be denied access due to authorisation issues. OR you will have a command wich includes `sudo`. This will give special priviliges to the programm you are installing so you should be sure about the source of the program when installing it with `sudo`. When you've run that command you will be promted with entering your password.
+So you will have to enter your password and when you enter it you will not see yourself typing. so just enter it and press `Enter`.
+
 Learning how to navigate through your computer will give you a better feeling of the layers in your machine. It will also save you a lot of time once you are getting used to using your keyboard more. And you also look like a hacker and feel super cool.
 
 Something I learned along the way is that you don't save your coding projects on your Desktop. First it is really messy and second of all if you really mess up it could destroy some of your data.
