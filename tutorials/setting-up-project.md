@@ -5,7 +5,7 @@ Hej and welcome we are super happy to see you joining our group
 Before we start coding we need to install and also get used to some tools and programms we will be using a lot.
 This tutorial is here to help you to get started and to find some resources that will make you comfortable with these tools.
 
-A way more complete tutorial with amazing links and resources can be found [here](https://courses.consensys.net/courses/take/bootcamp-basic-training/multimedia/24564946-package-management). This tutorial will just be there to lead you step for step through the process to setting up our GitHub project onyour local machine.
+A way more complete tutorial with amazing links and resources can be found [here](https://courses.consensys.net/courses/take/bootcamp-basic-training/multimedia/24564946-package-management). This tutorial will just be there to lead you step by step through the process to setting up our GitHub project on your local machine.
 
 1. [Command Line](#command-line)
 2. [Git](#git)
@@ -16,7 +16,7 @@ A way more complete tutorial with amazing links and resources can be found [here
 
 3. [Visual Studio Code](#visual-studio-code)
 
-First of all you will need to install `git`. This is a programm that will help you interact with software like GitHub and Gitlab but foremost will help you to do version control on the code you write. This is very helpfull when you are working on code on your own and maby need to reverse some changes, as you will always update and reorganize your code. But more importantly it is to organize the changes of a whole team. It is also the main version control tool that is used in companies. So if you are planning to become a blockchain developer, you should be comfortable using it. To actually open the code and edit it we will install [Visual Studio Code]().
+First of all you will need to install `git`. This is a programm that will help you interact with software like GitHub and Gitlab but foremost will help you to do version control on the code you write. This is very helpfull when you are working on code on your own and may need to reverse some changes, as you will always update and reorganize your code. But more importantly it is to organize the changes of a whole team. It is also the main version control tool that is used in companies. So if you are planning to become a blockchain developer, you should be comfortable using it. To actually open the code and edit it we will install [Visual Studio Code]().
 
 But before we get started you need to get comfortable with your terminal. Of course you could do most of these actions over a GUI (Graphical User Interface) but for some actions you will need to use your terminal and for that it is really good to get comfortable using it.
 
@@ -28,7 +28,7 @@ This tutorial will give you an introduction on how to use these tools. But every
 
 You will see the abreviation CLI a lot. It means Command Line Interface
 
-First you would open your Terminal. You should now be located in your `NAME_OF_YOUR_MACHINE/User` directory, it could also be `NAME_OF_YOUR_MACHINE/USER_NAME`. You will recognize that you are in yur home directory as well when you see this `~`sign.
+First you would open your Terminal. You should now be located in your `NAME_OF_YOUR_MACHINE/User` directory, it could also be `NAME_OF_YOUR_MACHINE/USER_NAME`. You will recognize that you are in your home directory as well when you see this `~`sign.
 
 From here you will install the software you will need, if I don't tell you that you need to navigate to a specific folder to do that.
 
@@ -73,11 +73,11 @@ last command I think is super helpful is
 ls -a
 ```
 
-it will give you a list of all files and directories that are in the directory you are currently in. This helps you to get an overview where you could navigate to, but also lets you easily copy the name of the directory you want to navigat to.
+it will give you a list of all files and directories that are in the directory you are currently in. This helps you to get an overview where you could navigate to, but also lets you easily copy the name of the directory you want to navigate to.
 
 'ls' (list files) is for unix it doesn't work in windows, use 'dir'.  
 
-As you will notice these are navigation commands. But there is also anther kind of commands.
+As you will notice these are navigation commands. But there is also another kind of commands.
 The ones that are programm specific commands. If you want to use them you have to write the name of the programm in front.
 For example if you want to make a git comand , you need to write `git` in front, and the same goes for VS Code, here that would be `code`.
 
@@ -87,7 +87,7 @@ For example if you want to make a git comand , you need to write `git` in front,
 
 So lets get started with `git`
 
-if you haven't installed it yet and also don't have set up you ssh key do the following steps. Otherwise you can jump to the next [subchapter](#setting-up-a-git-project).
+If you haven't installed it yet and also don't have set up you ssh key do the following steps. Otherwise you can jump to the next [subchapter](#setting-up-a-git-project).
 
 before you can install git, you need to make sure you have a packet manager. For MacOS that is for example `homebrew`.
 
@@ -103,7 +103,7 @@ git config user.email
 git config user.name
 ```
 
-if you got something back here great. Otherwise you have to set this up with
+If you got something back here great. Otherwise you have to set this up with
 
 ```
 git config --global user.name "John Doe"
@@ -117,10 +117,10 @@ Next step is to set up you ssh key. This is neccessary to connect you local git 
 
 ## setting up a git project
 
-So next step is getting this project into your locale machine. For this you have to got to the project page.
+So next step is getting this project into your local machine. For this you have to got to the project page.
 Currently our main project page is [this](https://github.com/DLT-developers-NFT-project/dlt-dev-nft-project). So far this contains a lot of planning and resource and documentation material. When we will start programming, we will set up other repositories which you will have to add as well. So when the time is there you can come back here if you will run into any difficulties.
 
-So first you'll copy the adress of the project. You will finde it at the green button that says `code`. Make sure you take the SSH key.
+So first you'll copy the adress of the project. You will find it at the green button that says `code`. Make sure you take the SSH key.
 
 ![image](./assets/Bildschirmfoto%202021-08-03%20um%2020.50.35.png)
 
@@ -171,6 +171,6 @@ if you are already in the `dlt-dev-nft-project`directory you can just enter and 
 code ..
 ```
 
-these commands work from the terminal. But you could of course jsut open VS Code and under `File > Open...` open the directory you want to work on.
+these commands work from the terminal. But you could of course just open VS Code and under `File > Open...` open the directory you want to work on.
 
 Amazing. Now for the next step go to the [tutorial](./1-git-hub-basics.md) on how to add stuff to the repository, how to create your own branch and how to merge it into the main branch.
