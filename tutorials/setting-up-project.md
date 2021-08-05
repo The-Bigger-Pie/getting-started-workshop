@@ -75,6 +75,8 @@ ls -a
 
 it will give you a list of all files and directories that are in the directory you are currently in. This helps you to get an overview where you could navigate to, but also lets you easily copy the name of the directory you want to navigat to.
 
+'ls' (list files) is for unix it doesn't work in windows, use 'dir'.  
+
 As you will notice these are navigation commands. But there is also anther kind of commands.
 The ones that are programm specific commands. If you want to use them you have to write the name of the programm in front.
 For example if you want to make a git comand , you need to write `git` in front, and the same goes for VS Code, here that would be `code`.
@@ -136,7 +138,7 @@ git clone git@github.com:DLT-developers-NFT-project/dlt-dev-nft-project.git
 
 # Visual Studio Code
 
-next thing you need to do, is to open the project in VS Code.
+Next thing you need to do, is to open the project in VS Code.
 
 If you havent already please [install](https://code.visualstudio.com/download) that on your machine.
 
