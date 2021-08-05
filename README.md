@@ -1,4 +1,4 @@
-# TBT ConsenSys Scholarship
+# TBP ConsenSys Scholarship
 
 Setting up your machine with [git](https://github.com/git-guides/install-git) and [VS Code](https://code.visualstudio.com/docs/setup/setup-overview) and using the main functionalities.
 
