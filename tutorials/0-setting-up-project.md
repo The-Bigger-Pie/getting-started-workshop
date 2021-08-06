@@ -97,7 +97,9 @@ As you will notice these are navigation commands. But there is also another kind
 The ones that are programm specific commands. If you want to use them you have to write the name of the programm in front.
 For example if you want to make a git comand , you need to write `git` in front, and the same goes for VS Code, here that would be `code`.
 
-A fun game to learn about all of these commands is this [game](https://github.com/veltman/clmystery).
+- Learning Resources
+  - A fun game to learn about all of these commands is this [game](https://github.com/veltman/clmystery).
+  - [17 Terminal commands every user should know](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/)
 
 # Git
 
