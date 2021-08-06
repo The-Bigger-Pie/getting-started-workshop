@@ -217,7 +217,7 @@ I would advise you to get the following extensions as they will help you writing
 - Live Share
 - Prettier
 - Rainbow Brackets
-- SCS IntelliSense
+- SCSS IntelliSense
 - solidity
 
 - TSLint
