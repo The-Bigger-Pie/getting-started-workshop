@@ -12,7 +12,9 @@ A way more complete tutorial with amazing links and resources can be found [here
 
    a. [setting up Git](#setting-up-git)
 
-   b. [setting up a git project](#setting-up-a-git-project)
+   b. [creating your SSH key](#creating-your-ssh-key)
+
+   c. [cloning a git project](#cloning-a-git-project)
 
 3. [Visual Studio Code](#visual-studio-code)
 
@@ -26,7 +28,7 @@ This tutorial will give you an introduction on how to use these tools. But every
 
 # Command Line
 
-You will see the abreviation CLI a lot. It means Command Line Interface
+You will see the abreviation CLI a lot. It means Command Line Interface. I will also use the term "terminal" a lot. Just so you don't get confused.
 
 First you would open your Terminal. You should now be located in your `NAME_OF_YOUR_MACHINE/User` directory, it could also be `NAME_OF_YOUR_MACHINE/USER_NAME`. You will recognize that you are in your home directory as well when you see this `~`sign.
 
@@ -48,7 +50,7 @@ So you will have to enter your password and when you enter it you will not see y
 
 Learning how to navigate through your computer will give you a better feeling of the layers in your machine. It will also save you a lot of time once you are getting used to using your keyboard more. And you also look like a hacker and feel super cool.
 
-Something I learned along the way is that you don't save your coding projects on your Desktop. First it is really messy and second of all if you really mess up it could destroy some of your data.
+Something I learned along the way is that you don't save your coding projects on your Desktop. First, it is really messy and second of all if you really mess up it could destroy some of your data.
 
 So the first thing you will do is to set up a directory that is placed in your home directory, on the same level as your `Desktop` directory.
 
@@ -95,6 +97,8 @@ As you will notice these are navigation commands. But there is also another kind
 The ones that are programm specific commands. If you want to use them you have to write the name of the programm in front.
 For example if you want to make a git comand , you need to write `git` in front, and the same goes for VS Code, here that would be `code`.
 
+A fun game to learn about all of these commands is this [game](https://github.com/veltman/clmystery).
+
 # Git
 
 ## setting up Git
@@ -127,16 +131,63 @@ git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
 
-Next step is to set up you ssh key. This is neccessary to connect you local git profile with your online Git profile. If you don't set this up you will have to log into GitHub everytime you want to push or pull something. For more info and how to set it up and how to add it to your remote GitHub profile check [here](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+## creating your SSH key
 
-## setting up a git project
+Next step is to set up you ssh key. This is neccessary to connect you local git profile with your online Git profile. If you don't set this up you will have to log into GitHub everytime you want to push or pull something. For more info check [here](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
-So next step is getting this project into your local machine. For this you have to got to the project page.
-Currently our main project page is [this](https://github.com/DLT-developers-NFT-project/dlt-dev-nft-project). So far this contains a lot of planning and resource and documentation material. When we will start programming, we will set up other repositories which you will have to add as well. So when the time is there you can come back here if you will run into any difficulties.
+So first you need to create a set of keys. A public and a private key. You can do this with the following command.
+
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+you will get promted with a question where you will want to store it. Don't write anything and just press enter. Like this it will be saved in the default folder `.ssh`. This will also make it easier once you have questions for other people to locate this folder. BTW the dot in front of the folder means that it is hidden. If you haven't changed your default settings for your file viewer/explorer, you will not see this folder. But of course you can change your settings, so that you will be shown also hidden files.
+
+When you are using your Terminal and you want to see hidden files, this command `ls -a` will show you also the hidden link.
+
+Once you created this set of keys, you will need to add you public key to you GitHub repository. For this you need to copy the key.
+
+run the following command and copy the whole output.
+
+```
+cat .ssh/id_rsa.pub
+```
+
+Take the output from `ssh-rsa` till the end including your email adress and go to your GitHub profile. In your settings you will be able to add the key.
+
+In some cases when you clone your project you will be asked if you want to add GitHub.com to youe `known_hosts`. In this case just agree.
+
+But if this doesn't happen and you get an error message like this:
+
+```
+Cloning into 'getting-started-workshop'...
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)?
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
+then you need to add GitHub.com to your known_hosts. Because with adding your ssh-key to your GitHub profile, you told it to trust your local machine. And now you need to tell your local machine to trust GitHub.
+
+```
+ssh-keyscan github.com >> ~/.ssh/known_hosts
+```
+
+If you want it hashed, add -H
+
+```
+ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+```
+
+## cloning a git project
 
 So first you'll copy the adress of the project. You will find it at the green button that says `code`. Make sure you take the SSH key.
 
-![image](./assets/Bildschirmfoto%202021-08-03%20um%2020.50.35.png)
+![image](./../assets/Bildschirmfoto%202021-08-03%20um%2020.50.35.png)
 
 then you will go back to your terminal and if you are not already in your developer directory you can navigate into your `Developer`directory like this:
 
