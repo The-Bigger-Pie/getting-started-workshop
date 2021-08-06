@@ -34,12 +34,12 @@ From here you will install the software you will need, if I don't tell you that 
 
 In the beginnning you will get a lot of error messages. Read them carefully.
 
-Sometimes they will even explain you what you did wrong and what command you actually have to enter. 
+Sometimes they will even explain you what you did wrong and what command you actually have to enter.
 You can trust these advices.
 
 When the Command Line tells you to run a command, it means, that you have to put it in the command line and then press enter.
 
-Another thing that will most likely happen to you a lot, is that you habe a spelling mistake in you command. But thankfully ou will not have to enter the complete command again. you can just press `arrow up` on your keyboard and you will be able to go through your last commands. 
+Another thing that will most likely happen to you a lot, is that you habe a spelling mistake in you command. But thankfully ou will not have to enter the complete command again. you can just press `arrow up` on your keyboard and you will be able to go through your last commands.
 
 Also you cannot just click on a position you want to get to. You will have to navigate with the arrow keys on your keyboard. But if its a long command you can also press `Ctr + A`.
 
@@ -89,7 +89,7 @@ ls -a
 
 it will give you a list of all files and directories that are in the directory you are currently in. This helps you to get an overview where you could navigate to, but also lets you easily copy the name of the directory you want to navigate to.
 
-'ls' (list files) is for unix it doesn't work in windows, use 'dir'.  
+'ls' (list files) is for unix it doesn't work in windows, use 'dir'.
 
 As you will notice these are navigation commands. But there is also another kind of commands.
 The ones that are programm specific commands. If you want to use them you have to write the name of the programm in front.
@@ -147,7 +147,7 @@ cd Developer
 then you will clone the git project into the Developer directory like this:
 
 ```
-git clone git@github.com:DLT-developers-NFT-project/dlt-dev-nft-project.git
+git clone git@github.com:The-Bigger-Pie/getting-started-workshop.git
 ```
 
 # Visual Studio Code
