@@ -1,6 +1,11 @@
 # GitHub Branches and Merges
 
-When we are working in a project, for every new feature we will create a new branch. This branch will always be created from the `main` branch, as this is the branch that is used for production and all the code that is merged in this branch will be tested before on the `staging` branch and will be approved before it is merged.
+For all of these topics, there is an amazing online tool to visualize and practice all of these commands.
+You can find it [here](https://learngitbranching.js.org/). And practice, practice, practice.
+
+When we are working in a project, for every new feature we will create a new branch. This branch will always be created from the `main` branch, as this is the branch that is generally used for production, which means the software is deployed from this branch.
+
+The following commands you run in cour Command Line. All of these action can be easily handled through the Graphical User Interface (GUI) of VS Code. But I believe to fully undertstand what is happening and to make you more comfortable with the command line, this tuturial will be about the commands.
 
 1. [Create a branch](#1-create-a-branch)
 2. [Merge conflicts](#2-merge-conflicts)
@@ -8,13 +13,45 @@ When we are working in a project, for every new feature we will create a new bra
 
 ## 1. Create a branch
 
-to create a new branch we will enter the command. Check that you are in the `main` branch and in the right directory when entering this command in the command line
+to create a new branch we will enter the command. Check that you are in the `main` branch and in the right directory when entering this command in the command line.
+
+```
+git branch NAME_OF_NEW_BRANCH
+```
+
+but actually your HEAD, which means the place where you are right now is still in the `main` branch. So before you can commit somthing to your new branch, you need to move your HEAD there. With the following command you can move between branches.
+
+```
+git checkout NAME_OF_NEW_BRANCH
+```
+
+to create a new branch and immediatly move to this branch there is a two-in-one command. With
+
+```
+git checkout -b NAME_OF_NEW_BRANCH
+```
+
+you can create a new branch and at the same time move your head there.
+Maybe you have forgotten how you names your branch. To display all branches you can run this command:
+
+```
+git branch
+```
+
+if you also want to see the remote branches, you run
+
+```
+git branch -a
+```
+
+### Task
 
 ```
 git branch #ISSUE_NR:YOUR_NAME
 ```
 
-now you should see in your bottom left corner the name of the branch you are currently in. If you are still in the `main` branch, you need to change the branch. To do so enter this in the command line
+now you should see in your bottom left corner the name of the branch you are currently in. If you are still in the `main` branch, you need to change the branch. To do so enter this in the command line.
+Here the issue number means the number of the issue we create for a project (for example in GitHub projects). It can also be your Ticket number in [Jira](https://jira.atlassian.com/), which is a project maagment tool. Putting the number in the right format in front of your branch will be helpflu later when you do a Pull Request and the Issue related to the branch can be closed when the Pull Request is accept. But more to this topic later.
 
 ```
 git checkout #ISSUE_NR:YOUR_NAME
@@ -69,3 +106,7 @@ Then you can select someone to review your code. Normally that would be someone 
 
 There is the possibility that your feature branch is behid the main branch and you will get the information that you need to `rebase` before it's possible to merge.
 We will discuss rebasing in the next chapter, but an easy solution would be to just merge the newest main branch into your feature branch.
+
+```
+
+```

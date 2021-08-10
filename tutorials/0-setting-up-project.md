@@ -18,7 +18,7 @@ A way more complete tutorial with amazing links and resources can be found [here
 
 3. [Visual Studio Code](#visual-studio-code)
 
-First of all you will need to install `git`. This is a programm that will help you interact with software like GitHub and Gitlab but foremost will help you to do version control on the code you write. This is very helpfull when you are working on code on your own and may need to reverse some changes, as you will always update and reorganize your code. But more importantly it is to organize the changes of a whole team. It is also the main version control tool that is used in companies. So if you are planning to become a blockchain developer, you should be comfortable using it. To actually open the code and edit it we will install [Visual Studio Code]().
+First of all you will need to install `git`. This is a programm that will help you interact with software like GitHub and Gitlab but foremost will help you to do version control on the code you write. This is very helpfull when you are working on code on your own and may need to reverse some changes, as you will always update and reorganize your code. But more importantly it is to organize the changes of a whole team. It is also the main version control tool that is used in companies. So if you are planning to become a blockchain developer, you should be comfortable using it. To actually open the code and edit it we will install [Visual Studio Code](https://code.visualstudio.com/).
 
 But before we get started you need to get comfortable with your terminal. Of course you could do most of these actions over a GUI (Graphical User Interface) but for some actions you will need to use your terminal and for that it is really good to get comfortable using it.
 
