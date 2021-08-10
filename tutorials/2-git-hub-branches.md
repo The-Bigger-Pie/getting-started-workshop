@@ -13,7 +13,7 @@ The following commands you run in cour Command Line. All of these action can be 
 
 ## 1. Create a branch
 
-to create a new branch we will enter the command. Check that you are in the `main` branch and in the right directory when entering this command in the command line.
+to create a new branch we will enter the command. Check that you are in the `main` branch and in the right directory when entering this command in the command line. You can check in what branch you are currently when looking at the bottom left corner in VS Code. The name of the branch will be displayed.
 
 ```
 git branch NAME_OF_NEW_BRANCH
@@ -38,6 +38,8 @@ Maybe you have forgotten how you names your branch. To display all branches you 
 git branch
 ```
 
+you will also see an asteriks at the branch you are currently in.
+
 if you also want to see the remote branches, you run
 
 ```
@@ -50,11 +52,21 @@ git branch -a
 git branch #ISSUE_NR:YOUR_NAME
 ```
 
+in our case
+
+```
+git branch #2:Lena-branch
+```
+
 now you should see in your bottom left corner the name of the branch you are currently in. If you are still in the `main` branch, you need to change the branch. To do so enter this in the command line.
 Here the issue number means the number of the issue we create for a project (for example in GitHub projects). It can also be your Ticket number in [Jira](https://jira.atlassian.com/), which is a project maagment tool. Putting the number in the right format in front of your branch will be helpflu later when you do a Pull Request and the Issue related to the branch can be closed when the Pull Request is accept. But more to this topic later.
 
 ```
 git checkout #ISSUE_NR:YOUR_NAME
+```
+
+```
+git checkout #2:Lena-branch
 ```
 
 Next you will copy the `team/template.md` file and rename it to your name. Then fill in all information about your technical knowledge. This is frst of all super helpfull fpr everybody who is creating workshops to get an overview of how far you are and second of all this is preparation for how you could write that in your CV.
@@ -67,6 +79,16 @@ Once you save all the changes, you will do the Git Basic Steps
 - commit
 - push
 
+if this is your first time pushing you will be promtet with a message in your terminal that lets you know that there is not yet a remote repository that equals your local one. So you will actually have to set one up. You will get a proposition for a command like this:
+
+```
+   git push --set-upstream origin YOU_NEW_BRANCH_NAME
+```
+
+# 2. Merge conflicts
+
+You actually know what a merge is and you already done it whenever you pulled the remote branch into your local repository.
+
 if this is a bigger project and you are working on this feauture for a longer time, check if there are changes of other teams that are already released on the main branch that you maybe need to add. If that is the case, you should merge the main branch into your local repository. But be aware once you have merge commits in your log, it is going to be harder to `rebase`. So only do it when it is neccessary.
 
 to merge the `main` branch into your branch enter this command into the command line. But check that you are in your feature branch.
@@ -75,12 +97,7 @@ to merge the `main` branch into your branch enter this command into the command 
 git merge main
 ```
 
-- a shortcut for that is to press `Cmd + Enter + P`. this will open a search bar for commands in VS Code and when you search for `Git`you get shown several commands. Here you select `Git: Checkout to...` the next option will be either to select a branch or to create a new branch. Here you can then just enter the name of the new branch.
-- the same way you can also merge branches, with the command `Git: Merge branches...`.
-
 ![image of dropdown search](./assets/Bildschirmfoto%202021-08-03%20um%2022.27.09.png)
-
-# 2. Merge conflicts
 
 Merge conflicts are going to happen. And you should get used to them. So thats why we try to train them in our tutorials. They happen when two people are working on the same file on the same line of code. The person that pulls the changes of the other person into their local repsoitory first has to solve this conflict.
 
@@ -110,3 +127,6 @@ We will discuss rebasing in the next chapter, but an easy solution would be to j
 ```
 
 ```
+
+- a shortcut for that is to press `Cmd + Enter + P`. this will open a search bar for commands in VS Code and when you search for `Git`you get shown several commands. Here you select `Git: Checkout to...` the next option will be either to select a branch or to create a new branch. Here you can then just enter the name of the new branch.
+- the same way you can also merge branches, with the command `Git: Merge branches...`.
