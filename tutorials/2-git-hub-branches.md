@@ -79,7 +79,7 @@ Once you save all the changes, you will do the Git Basic Steps
 - commit
 - push
 
-if this is your first time pushing you will be promtet with a message in your terminal that lets you know that there is not yet a remote repository that equals your local one. So you will actually have to set one up. You will get a proposition for a command like this:
+If this is your first time pushing you will be promtet with a message in your terminal that lets you know that there is not yet a remote repository that equals your local one. So you will actually have to set one up. You will get a proposition for a command like this:
 
 ```
    git push --set-upstream origin YOU_NEW_BRANCH_NAME
