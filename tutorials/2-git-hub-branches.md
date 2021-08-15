@@ -82,8 +82,31 @@ Once you save all the changes, you will do the Git Basic Steps
 if this is your first time pushing you will be promtet with a message in your terminal that lets you know that there is not yet a remote repository that equals your local one. So you will actually have to set one up. You will get a proposition for a command like this:
 
 ```
-   git push --set-upstream origin YOU_NEW_BRANCH_NAME
+   git push --set-upstream origin YOUR_NEW_BRANCH_NAME
 ```
+
+If you are done with a branch and you don't need it anymore you will want to delete it. You can only delete a branch if your HEAD is in another branch.
+
+```
+git branch -d YOUR_NEW_BRANCH_NAME
+```
+
+In some cases, like that the branch is not fully merged, you will get promted to run
+
+```
+git branch -D YOUR_NEW_BRANCH_NAME
+```
+
+to verify you are sure to delete the branch. If you are sure you can delete it.
+
+To delete a remote branch you actually have to run a different command:
+
+```
+git push origin --delete remotes/origin/YOUR_NEW_BRANCH_NAME
+```
+
+BTW: whenever you use somthing after a minus in a command this is called a flag.
+In this case you are using the "--delete" flag.
 
 # 2. Merge conflicts
 
@@ -97,7 +120,7 @@ to merge the `main` branch into your branch enter this command into the command 
 git merge main
 ```
 
-![image of dropdown search](./assets/Bildschirmfoto%202021-08-03%20um%2022.27.09.png)
+![image of mergeconflict](./assets/Bildschirmfoto%202021-08-03%20um%2022.27.09.png) // add image of merge conflict
 
 Merge conflicts are going to happen. And you should get used to them. So thats why we try to train them in our tutorials. They happen when two people are working on the same file on the same line of code. The person that pulls the changes of the other person into their local repsoitory first has to solve this conflict.
 
