@@ -10,6 +10,7 @@ The following commands you run in cour Command Line. All of these action can be 
 1. [Create a branch](#1-create-a-branch)
 2. [Merge conflicts](#2-merge-conflicts)
 3. [PR: make a pull request](#3-pr-make-a-pull-request)
+4. [GitHub Commands in VS Code](#4-github-commands-in-vs-code)
 
 ## 1. Create a branch
 
@@ -82,8 +83,31 @@ Once you save all the changes, you will do the Git Basic Steps
 if this is your first time pushing you will be promtet with a message in your terminal that lets you know that there is not yet a remote repository that equals your local one. So you will actually have to set one up. You will get a proposition for a command like this:
 
 ```
-   git push --set-upstream origin YOU_NEW_BRANCH_NAME
+   git push --set-upstream origin YOUR_NEW_BRANCH_NAME
 ```
+
+If you are done with a branch and you don't need it anymore you will want to delete it. You can only delete a branch if your HEAD is in another branch.
+
+```
+git branch -d YOUR_NEW_BRANCH_NAME
+```
+
+In some cases, like that the branch is not fully merged, you will get promted to run
+
+```
+git branch -D YOUR_NEW_BRANCH_NAME
+```
+
+to verify you are sure to delete the branch. If you are sure you can delete it.
+
+To delete a remote branch you actually have to run a different command:
+
+```
+git push origin --delete remotes/origin/YOUR_NEW_BRANCH_NAME
+```
+
+BTW: whenever you use somthing after a minus in a command this is called a flag.
+In this case you are using the "--delete" flag.
 
 # 2. Merge conflicts
 
@@ -97,16 +121,18 @@ to merge the `main` branch into your branch enter this command into the command 
 git merge main
 ```
 
-![image of dropdown search](./assets/Bildschirmfoto%202021-08-03%20um%2022.27.09.png)
+![image of mergeconflict](./assets/Bildschirmfoto%202021-08-03%20um%2022.27.09.png) // add image of merge conflict
 
 Merge conflicts are going to happen. And you should get used to them. So thats why we try to train them in our tutorials. They happen when two people are working on the same file on the same line of code. The person that pulls the changes of the other person into their local repsoitory first has to solve this conflict.
 
-Normally if you do a merge (by merging or pulling) youll get all changed files in a list and in the top are the iles with a merge conflict. You need to resolve these before you commit this merge. If you try to do it anyways you'll get a warning.
+Normally if you do a merge (by merging or pulling) you'll get all changed files in a list and in the top are the iles with a merge conflict. You need to resolve these before you commit this merge. If you try to do it anyways you'll get a warning.
 Normally also your code will not compile if you have these merge makers.
 
 If you have a merge conflict you will see the current changes and the incoming changes on top of each other. You have several options. You can either accept the incoming changes, or choose the current changes or accept both and then delete what you dont need. Sometimes even the very amazing Git doesn't get it all.
 
-Sometimes you can not dcide on your own what code needs to stay and what code can be thrown out. Then you need to check who wrote the code and ask that person to do the merge with you.
+![image of a merge conflict](./../assets/mergeconflict.png)
+
+Sometimes you can not decide on your own what code needs to stay and what code can be thrown out. Then you need to check who wrote the code and ask that person to do the merge with you.
 
 - ways to prevent big merge conflicts:
   - pull changes often
@@ -122,11 +148,15 @@ Here you take as the base the `main` branch and compare it to your feature branc
 Then you can select someone to review your code. Normally that would be someone from your team. That person will give you maybe some comments and if everything si resolved you should be able to merge your branch into the main branch.
 
 There is the possibility that your feature branch is behid the main branch and you will get the information that you need to `rebase` before it's possible to merge.
-We will discuss rebasing in the next chapter, but an easy solution would be to just merge the newest main branch into your feature branch.
+We will discuss rebasing in the next chapter, but an easy solution would be to just merge the newest main branch into your feature branch. so just as we did in the merge chapter run this command
 
 ```
-
+git merge main
 ```
+
+# 4. GitHub Commands in VS Code
 
 - a shortcut for that is to press `Cmd + Enter + P`. this will open a search bar for commands in VS Code and when you search for `Git`you get shown several commands. Here you select `Git: Checkout to...` the next option will be either to select a branch or to create a new branch. Here you can then just enter the name of the new branch.
 - the same way you can also merge branches, with the command `Git: Merge branches...`.
+
+![image of dropdown search](./../assets/dropdownsearch.png)
