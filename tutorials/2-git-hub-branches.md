@@ -97,14 +97,14 @@ to merge the `main` branch into your branch enter this command into the command 
 git merge main
 ```
 
-![image of dropdown search](./assets/Bildschirmfoto%202021-08-03%20um%2022.27.09.png)
-
 Merge conflicts are going to happen. And you should get used to them. So thats why we try to train them in our tutorials. They happen when two people are working on the same file on the same line of code. The person that pulls the changes of the other person into their local repsoitory first has to solve this conflict.
 
-Normally if you do a merge (by merging or pulling) youll get all changed files in a list and in the top are the iles with a merge conflict. You need to resolve these before you commit this merge. If you try to do it anyways you'll get a warning.
+Normally if you do a merge (by merging or pulling) you'll get all changed files in a list and in the top are the iles with a merge conflict. You need to resolve these before you commit this merge. If you try to do it anyways you'll get a warning.
 Normally also your code will not compile if you have these merge makers.
 
 If you have a merge conflict you will see the current changes and the incoming changes on top of each other. You have several options. You can either accept the incoming changes, or choose the current changes or accept both and then delete what you dont need. Sometimes even the very amazing Git doesn't get it all.
+
+![image of a merge conflict](./../assets/mergeconflict.png)
 
 Sometimes you can not dcide on your own what code needs to stay and what code can be thrown out. Then you need to check who wrote the code and ask that person to do the merge with you.
 
@@ -130,3 +130,5 @@ We will discuss rebasing in the next chapter, but an easy solution would be to j
 
 - a shortcut for that is to press `Cmd + Enter + P`. this will open a search bar for commands in VS Code and when you search for `Git`you get shown several commands. Here you select `Git: Checkout to...` the next option will be either to select a branch or to create a new branch. Here you can then just enter the name of the new branch.
 - the same way you can also merge branches, with the command `Git: Merge branches...`.
+
+![image of dropdown search](./../assets/dropdownsearch.png)
