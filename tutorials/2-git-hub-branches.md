@@ -10,6 +10,7 @@ The following commands you run in cour Command Line. All of these action can be 
 1. [Create a branch](#1-create-a-branch)
 2. [Merge conflicts](#2-merge-conflicts)
 3. [PR: make a pull request](#3-pr-make-a-pull-request)
+4. [GitHub Commands in VS Code](#4-github-commands-in-vs-code)
 
 ## 1. Create a branch
 
@@ -131,7 +132,7 @@ If you have a merge conflict you will see the current changes and the incoming c
 
 ![image of a merge conflict](./../assets/mergeconflict.png)
 
-Sometimes you can not dcide on your own what code needs to stay and what code can be thrown out. Then you need to check who wrote the code and ask that person to do the merge with you.
+Sometimes you can not decide on your own what code needs to stay and what code can be thrown out. Then you need to check who wrote the code and ask that person to do the merge with you.
 
 - ways to prevent big merge conflicts:
   - pull changes often
@@ -147,11 +148,13 @@ Here you take as the base the `main` branch and compare it to your feature branc
 Then you can select someone to review your code. Normally that would be someone from your team. That person will give you maybe some comments and if everything si resolved you should be able to merge your branch into the main branch.
 
 There is the possibility that your feature branch is behid the main branch and you will get the information that you need to `rebase` before it's possible to merge.
-We will discuss rebasing in the next chapter, but an easy solution would be to just merge the newest main branch into your feature branch.
+We will discuss rebasing in the next chapter, but an easy solution would be to just merge the newest main branch into your feature branch. so just as we did in the merge chapter run this command
 
 ```
-
+git merge main
 ```
+
+# 4. GitHub Commands in VS Code
 
 - a shortcut for that is to press `Cmd + Enter + P`. this will open a search bar for commands in VS Code and when you search for `Git`you get shown several commands. Here you select `Git: Checkout to...` the next option will be either to select a branch or to create a new branch. Here you can then just enter the name of the new branch.
 - the same way you can also merge branches, with the command `Git: Merge branches...`.
