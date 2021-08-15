@@ -26,13 +26,13 @@ but actually your HEAD, which means the place where you are right now is still i
 git checkout NAME_OF_NEW_BRANCH
 ```
 
-to create a new branch and immediatly move to this branch there is a two-in-one command. With
+To create a new branch and immediatly move to this branch there is a two-in-one command. With
 
 ```
 git checkout -b NAME_OF_NEW_BRANCH
 ```
 
-you can create a new branch and at the same time move your head there.
+You can create a new branch and at the same time move your head there.
 Maybe you have forgotten how you names your branch. To display all branches you can run this command:
 
 ```
