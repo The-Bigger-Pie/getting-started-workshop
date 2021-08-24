@@ -6,3 +6,4 @@
 | Qasim    | [@qbigzad](https://github.com/qbigzad)              | [my file](./qbigzad.md)              |
 | Varsha   | [@varshadproject](https://github.com/varshaproject) | [my file ](./team.md)                |
 | Madhu    | [@immadhu](https://github.com/immadhu)              | [my file ](./madhu.md)               |
+  Thanh    | [@zoey](https://github.com/zoey)              | [my file ](./Thanh.md)               
