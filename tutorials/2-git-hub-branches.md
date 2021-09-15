@@ -14,6 +14,8 @@ The following commands you run in cour Command Line. All of these action can be 
 
 ## 1. Create a branch
 
+Find the vdeo to the tutorial [here](https://www.loom.com/share/665aaef969814b7e885c5a7da5bd13e9?sharedAppSource=personal_library).
+
 to create a new branch we will enter the command. Check that you are in the `main` branch and in the right directory when entering this command in the command line. You can check in what branch you are currently when looking at the bottom left corner in VS Code. The name of the branch will be displayed.
 
 ```
@@ -111,6 +113,8 @@ In this case you are using the "--delete" flag.
 
 # 2. Merge conflicts
 
+Find the vdeo to the tutorial [here](https://www.loom.com/share/fd87fd9aeed44990a0ead5da53064540?sharedAppSource=personal_library).
+
 You actually know what a merge is and you already done it whenever you pulled the remote branch into your local repository.
 
 if this is a bigger project and you are working on this feauture for a longer time, check if there are changes of other teams that are already released on the main branch that you maybe need to add. If that is the case, you should merge the main branch into your local repository. But be aware once you have merge commits in your log, it is going to be harder to `rebase`. So only do it when it is neccessary.
@@ -140,6 +144,8 @@ Sometimes you can not decide on your own what code needs to stay and what code c
 
 # 3. PR: make a pull request
 
+Find the vdeo to the tutorial [here](https://www.loom.com/share/09ccdb52b51341b7905d58157903294d?sharedAppSource=personal_library).
+
 Once you have finished your feature and you want to merge it into the main, the workflow is as follows:
 
 In GitHub (in your Browser) in the repository, next to your code and Issus, there is also the possibility to select PullRequest. Choose to create a new Pull Request.
@@ -155,6 +161,8 @@ git merge main
 ```
 
 # 4. GitHub Commands in VS Code
+
+Find the vdeo to the tutorial [here](https://www.loom.com/share/86fc6ba03cbe4775ba0e317a87e00a0f?sharedAppSource=personal_library).
 
 - a shortcut for that is to press `Cmd + Enter + P`. this will open a search bar for commands in VS Code and when you search for `Git`you get shown several commands. Here you select `Git: Checkout to...` the next option will be either to select a branch or to create a new branch. Here you can then just enter the name of the new branch.
 - the same way you can also merge branches, with the command `Git: Merge branches...`.
