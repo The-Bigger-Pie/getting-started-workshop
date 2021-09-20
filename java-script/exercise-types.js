@@ -1,3 +1,18 @@
+/* This exercise is about the five data types 
+   - string
+   - number
+   - boolean
+   - Array
+   - Object
+
+   to check the type of a variable use typeof x
+   e.g.
+   const x = 7;
+   console.log(typeof x);
+   -> number
+*/
+
+
 // write a function that adds to numbers together and returns the sum
 
 function sum(a, b) {
@@ -12,6 +27,16 @@ function concat(a, b) {
 };
 
 // concat('Lena', 'Hierzi')
+
+// write a function that checks if two inputs are equal
+// check out different levels of equality (e.g. strict equality)
+function isEqual() {
+
+}
+
+// isEqual(2, 3)
+// isEqual(2, 2)
+// isEqual(2, '2')
 
 // write a function that returns the 1st element out of an Array
 function firstElement(array) {
@@ -39,3 +64,5 @@ function userInfo(name, githubName, id) {
 
 // userInfo('Lena', 'giaghierz', 23)
 // userInfo(['Lena', 'Hierzi'], 'giaghierz', [23, 29])
+
+
