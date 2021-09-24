@@ -12,28 +12,9 @@
    -> number
 */
 
-/* To run the file, in the terminal, you have to enter this command:
+// First create a copy of this file in this folder
+//  and change it's name to your name
 
-   `node name-of-file.js`
-
-
-   - make sure you are in the right directory in your terminal. You might have to 
-      add the directory the file is in... 
-      e.g. when your terminal shows you that you are at `getting-started-workshop` 
-      you have to run this command:
-
-      `node java-script/your-name.js`
-
-      or you navigate into the directory with 
-
-      `cd java-script`
-
-      and here you can run this command
-
-      `node your-name.js`
-   
-
-*/
 
 // write a function that adds to numbers together and returns the sum
 
