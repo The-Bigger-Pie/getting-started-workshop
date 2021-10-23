@@ -4,9 +4,13 @@ First thing we do is add the extension for LiveServer to VS Code.
 Next thing would be to start the live serving of our index.html file.
 We do this by rght clicking on the file and choosing LiveServer as an option. It should then open in your browser with the address: http://127.0.0.1:5500/java-script/vanilla-js/solution/index.html
 
-Check out this [CheatSheet](http://127.0.0.1:5500/java-script/vanilla-js/solution/index.html) for more infos and explanations. And feel free to add other helpful resources you encounter.
+Check out this [CheatSheet](https://gist.github.com/thegitfather/9c9f1a927cd57df14a59c268f118ce86) for more infos and explanations. And feel free to add other helpful resources you encounter.
 
-## - Create elements
+1. [Create elements](#create-elements)
+2. [Add styling](#add-styling)
+3. [Connect to MetaMask](#connect-to-metamask)
+
+## 1. Create elements
 
 We want to create our first Element.
 For this we add this code into the index.js file.
@@ -102,7 +106,7 @@ body.appendChild(heading);
 body.appendChild(enableEthereumButton);
 ```
 
-## - Add styling
+## 2. Add styling
 
 Now everything looks very boring and I don't like to work with something that looks boring, so lets add some styling.
 
@@ -144,7 +148,7 @@ body {
 }
 ```
 
-## - Connect to MetaMask
+## 3. Connect to MetaMask
 
 To connect to MetaMask we will use the [ether.js library](https://docs.ethers.io/v5/getting-started/#getting-started--glossary).
 
