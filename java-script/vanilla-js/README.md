@@ -2,7 +2,9 @@
 
 First thing we do is add the extension for LiveServer to VS Code.
 Next thing would be to start the live serving of our index.html file.
-We do this by
+We do this by rght clicking on the file and choosing LiveServer as an option. It should then open in your browser with the address: http://127.0.0.1:5500/java-script/vanilla-js/solution/index.html
+
+Check out this [CheatSheet](http://127.0.0.1:5500/java-script/vanilla-js/solution/index.html) for more infos and explanations. And feel free to add other helpful resources you encounter.
 
 ## - Create elements
 
