@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(214, 237, 243);
+}
+
+.enable-button {
+  background-color: rgb(230, 190, 80);
+}
