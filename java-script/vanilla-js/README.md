@@ -6,6 +6,8 @@ We do this by rght clicking on the file and choosing LiveServer as an option. It
 
 Check out this [CheatSheet](https://gist.github.com/thegitfather/9c9f1a927cd57df14a59c268f118ce86) for more infos and explanations. And feel free to add other helpful resources you encounter.
 
+Before you start with this tutorial, create your own branch if you haben't done that yet and solve this exercise there. If you already have created your own branch, you can
+
 1. [Create elements](#create-elements)
 2. [Add styling](#add-styling)
 3. [Connect to MetaMask](#connect-to-metamask)
@@ -202,8 +204,11 @@ here we are using the `onclick`function that is already build into the button el
 
 Okay. Great. Now try it out. Play around. Create more buttons. Change some colors. Maybe a list...
 
-Exampls for more tasks
+Examples for more tasks
 
 - create a navigation list (try to change several eements at once (e.g. document.querySelectorAll()))
 - create a button that increments a counter
 - look into the difference between `document.querySelector('.someclass')` and `document.querySelectorAll('div.note, div.alert')`
+
+The idea to do this tutorial was based on the talk about compound. You should definitly check that out.
+The repository for that talk can be found [here](https://github.com/ajb413/consensys-academy-compound-js){target=\_blank}.
