@@ -155,7 +155,7 @@ run the following command and copy the whole output.
 cat .ssh/id_ed25519.pub
 ```
 
-Take the output from `ssh-rsa` till the end including your email adress and go to your GitHub profile. In your settings you will be able to add the key.
+Take the output from `ssh-ed25519` till the end including your email adress and go to your GitHub profile. In your settings you will be able to add the key.
 
 In some cases when you clone your project you will be asked if you want to add GitHub.com to youe `known_hosts`. In this case just agree.
 
