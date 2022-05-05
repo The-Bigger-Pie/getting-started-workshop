@@ -152,7 +152,7 @@ Once you created this set of keys, you will need to add you public key to you Gi
 run the following command and copy the whole output.
 
 ```
-cat .ssh/id_rsa.pub
+cat .ssh/id_ed25519.pub
 ```
 
 Take the output from `ssh-rsa` till the end including your email adress and go to your GitHub profile. In your settings you will be able to add the key.
